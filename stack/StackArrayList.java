@@ -3,11 +3,6 @@ import java.util.*;
 public class StackArrayList {
     
     static class Stack{
-
-        
-           
-                
-
         static ArrayList<Integer> list = new ArrayList<>();
         public static boolean isEmpty() {
             return list.size() == 0;
@@ -35,12 +30,6 @@ public class StackArrayList {
             }
             return list.get(list.size()-1);
         }
-
-        
-
-
-
-
     }
     public static void main(String args[]){
             Stack.push(1);

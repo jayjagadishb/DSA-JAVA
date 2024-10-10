@@ -8,3 +8,6 @@ Operations
 - for reverse a stack without using extra space we will use the concept of push at bottom instead of push at top.
 
 - for Stock Span Problem formula (max no of consecutive days for which todays price is >= other previous prices ) = current element index - previous high index . for this we store index of prev highs in stack .
+
+- Max area in histogram : area = height * width. And to calculate width always look for each element next smaller in both left and right. where lets assume next left smaller = i and next right smaller = j. so width = j-i-1
+

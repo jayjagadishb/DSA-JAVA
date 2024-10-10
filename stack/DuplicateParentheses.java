@@ -2,7 +2,7 @@ import java.util.*;
 public class DuplicateParentheses {
     public static boolean isDuplicate(String str){
         Stack<Character> s = new Stack<>();
-        for(int i=0;i<str.length();i++){
+        for(int i=0;i<str.length();i++){   //O(n)
             char ch = str.charAt(i);
             if(ch == ')'){
                int count = 0;
