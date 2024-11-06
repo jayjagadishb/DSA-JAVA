@@ -1,0 +1,2 @@
+mid = start + (end-start)/2;
+No of times a sorted array is rotated = index of the smallest value in array.

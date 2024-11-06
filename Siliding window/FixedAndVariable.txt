@@ -1,0 +1,43 @@
+Logic for Fixed window size:
+
+i=0,j=0
+while(j<sizeOfArr)
+{
+    calculations
+
+    if(windowSize < k){
+        j++
+    }
+    else if(windowSize == k){
+        ans = extract from calculations
+        remove i from calculations
+        window size maintain and slide
+    }
+}
+return ans
+
+
+Logic for variable window size:
+
+i=0,j=0
+while(j<size)
+{
+    calculations
+
+    if(condition < k){
+        j++
+    }
+
+    else if(condition == k){
+        ans = extract answer from calculations
+        j++
+    }
+    else if(condition > k){
+        while(condition > k){
+            remove arr[i] from calculations
+            i++
+        }
+        j++
+    }
+}
+return ans
