@@ -11,7 +11,7 @@ public class NoOfTimesASortedArrayRotated{
             int mid = low + (high-low)/2;
             int next = (mid+1) % n;
             int left = (mid+n-1) % n;
-            while(arr[mid] <= arr[left] && arr[mid]<= arr[next]){
+            while(arr[mid] <= arr[left] && arr[mid]<= arr[next]){           
                 return mid;
             }
             if(arr[mid]>=arr[low]){
@@ -27,6 +27,6 @@ public class NoOfTimesASortedArrayRotated{
     public static void main(String args[]){
          int[] arr = {15, 18, 2, 3, 6, 12};
         int rotations = countRotations(arr);
-        System.out.println("The array is rotated " + rotations + " times.");
+        System.out.println("The array is rotated " + rotations + " times.");       
     }
 }
